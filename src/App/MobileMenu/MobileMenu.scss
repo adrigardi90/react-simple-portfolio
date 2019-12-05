@@ -1,0 +1,28 @@
+@import './../../styles/_variables';
+
+.mobile-menu {
+    height: calc(100vh - #{$header});
+    background-color: $color-menu;
+    position: absolute;
+    top: $header;
+    right: 0;
+    left: 0;
+    padding: 0 30px;
+
+    &__entry {
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        padding: .55556rem 0;
+        text-align: center;
+        padding: 20px 0;
+
+        a {
+            font-family: "Maison Neue Bold", sans-serif;
+            font-weight: bolder;
+            font-style: normal;
+            color: black;
+            font-size: 1.1111111111111112rem;
+            text-decoration: none;
+        }
+
+    }
+}

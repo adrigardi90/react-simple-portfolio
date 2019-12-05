@@ -1,0 +1,10 @@
+
+@import './../../styles/variables';
+
+.app {
+    &__container {
+        height: calc(100vh - #{$header});
+        overflow-y: scroll;
+        background-color: $background-color
+    }
+}

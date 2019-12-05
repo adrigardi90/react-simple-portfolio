@@ -1,0 +1,125 @@
+@import './../../styles/_variables';
+
+.header {
+    height: $header;
+    display: flex;
+    align-items: center;
+    padding: 0 15px;
+    border-bottom: 1px solid #4e4d4dcc;
+
+    .main-container {
+        height: 100%;
+    }
+
+    &__menu {
+        font-size: 2.5rem !important;
+        display: flex;
+        align-items: center;
+        height: 100% !important;
+
+        @media screen and (min-width: $lg) {
+            display: none;
+        }
+    }
+
+    &__options {
+        display: none;
+
+        @media screen and (min-width: $lg) {
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .media {
+            align-self: center;
+
+            svg {
+                padding: 0 15px;
+                font-size: 30px;
+                cursor: pointer;
+            }
+        }
+
+        .entry {
+            display: flex;
+            align-items: center;
+
+            div {
+                display: flex;
+                height: 100%;
+                align-items: center;
+                padding: 0 10px;
+                cursor: pointer;
+            }
+
+            a {
+                font-size: 1rem;
+                font-weight: 600;
+                text-decoration: none;
+                display: flex;
+                height: 100%;
+                align-items: center;
+            }
+
+            span {
+                padding: 0 20px;
+            }
+        }
+    }
+
+    &.dark {
+        background-color: rgb(2, 2, 2);
+        color: white;
+
+        .media {
+            svg {
+                color: white;
+
+                &:hover {
+                    color: $color-menu;
+                }
+            }
+        }
+
+        .entry {
+            div:hover {
+                border-bottom: 3px solid $color-menu;
+            }
+
+            a {
+                color: white
+            }
+        }
+    }
+
+    &.light {
+        background-color: white;
+        color: black;
+
+        .media {
+            svg {
+                color: black;
+
+                &:hover {
+                    color: $color-menu;
+                }
+            }
+        }
+
+        .entry {
+            div:hover {
+                border-bottom: 3px solid black;
+            }
+
+            a {
+                color: black
+            }
+        }
+    }
+
+}

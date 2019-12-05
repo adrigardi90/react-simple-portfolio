@@ -1,0 +1,126 @@
+@import './../../../styles/_variables';
+
+
+.home {
+    height: 100%;
+
+    &__title {
+        padding: 4rem 1.1rem;
+        background: black;
+
+        @media screen and (min-width: $md) {
+            padding-top: 5rem;
+            padding-bottom: 6rem;
+        }
+
+        @media screen and (min-width: $lg) {
+            padding-top: 8rem;
+        }
+
+        h1 {
+            color: white;
+            font-size: 3.27778rem;
+            line-height: 4rem;
+            color: white;
+            font-weight: 600;
+            font-style: normal;
+            margin-bottom: 1.5rem;
+
+            @media screen and (min-width: $sm) {
+                font-size: 6.11111rem;
+                line-height: 6.11111rem;
+            }
+
+            @media screen and (min-width: $md) {
+                font-size: 7.33333rem;
+                line-height: 7.16667rem;
+            }
+
+            @media screen and (min-width: $lg) {
+                font-size: 8.55556rem;
+                line-height: 9.11111rem;
+            }
+
+            @media screen and (min-width: $xl) {
+                font-size: 9.2rem;
+                line-height: 9.5rem;
+            }
+        }
+
+        h3 {
+            color: $grey;
+            margin-top: 3rem;
+            font-size: 1.55556rem;
+            font-weight: 300;
+            width: 85%;
+
+            @media screen and (min-width: $lg) {
+                font-size: 2.15556rem;
+            }
+        }
+
+        .separator {
+            width: 100px;
+            height: 10px;
+            background: $color-menu;
+        }
+    }
+
+    &__team {
+        background-image: url('./../../../styles/assets/home_bck.png');
+        background-position: top center;
+        background-attachment: scroll;
+        background-repeat: no-repeat;
+        padding: 10rem 1rem;
+        background-color: black;
+
+        @media screen and (min-width: $xl) {
+            background-size: 100%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 5rem;
+            color: white;
+            display: none;
+
+            @media screen and (min-width: $lg) {
+                font-size: 7.55556rem;
+                line-height: 9.11111rem;
+            }
+
+            @media screen and (min-width: $xl) {
+                font-size: 8.2rem;
+                line-height: 9.5rem;
+            }
+        }
+
+        h3 {
+            text-align: center;
+            color: white;
+            font-weight: 100;
+            letter-spacing: 2px;
+            font-family: fantasy;
+            font-size: 1.7rem;
+
+            @media screen and (min-width: $sm) {
+                font-size: 2rem;
+            }
+
+            @media screen and (min-width: $md) {
+                font-size: 2.3rem;
+            }
+
+            @media screen and (min-width: $lg) {
+                font-size: 2.6rem;
+            }
+
+            @media screen and (min-width: $lg) {
+                font-size: 3rem;
+            }
+
+        }
+
+    }
+
+}

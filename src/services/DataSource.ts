@@ -2,7 +2,7 @@ const sanityClient = require('@sanity/client')
 import { Pages } from "../routes/routes.interface"
 
 const client = sanityClient({
-    projectId: `${process.env.PROJECT_ID}`,
+    projectId: `${process.env.REACT_APP_PROJECT_ID}`,
     dataset: 'production',
 })
 

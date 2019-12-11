@@ -23,7 +23,7 @@
   },
   "scripts": {
     "start": "PORT=3333 react-scripts start",
-    "build": "process.env.REACT_APP_PROJECT_ID",
+    "build": "export REACT_APP_PROJECT_ID=${node -p 'process.env.REACT_APP_PROJECT_ID'} react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "postbuild": "react-snap"

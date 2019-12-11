@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom';
+import { withRouter } from 'react-router-dom'
+import { Helmet } from "react-helmet"
 
 import './App.scss'
 import { Header } from './Header/Header'
@@ -37,6 +38,16 @@ class App extends Component<any, State> {
   render() {
     return (
       <div className="app">
+        <Helmet>
+          <meta charSet="utf-8" />
+          <title>Adrián García Diéguez</title>
+          <link rel="canonical" href="https://adrigardi.ga" />
+          <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
+          <meta name="description" content="Simple personal portfolio" />
+          <meta property="og:title" content="Adrián García Diéguez"/>
+          <meta property="og:description" content="Simple personal portfolio"/>
+          <meta property="og:image" content={require('./../styles/assets/profile.png')}/>
+        </Helmet>
         <Header
           openMenu={() => this.openBurgerMenu()}
           opened={this.state.menuOpened}

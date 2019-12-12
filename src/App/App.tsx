@@ -43,9 +43,9 @@ class App extends Component<any, State> {
           <title>Adrián García Diéguez</title>
           <link rel="canonical" href="https://adrigardi.ga" />
           <meta name="viewport" content="initial-scale=1, maximum-scale=1"/>
-          <meta name="description" content="Simple personal portfolio" />
+          <meta name="description" content="Frontend architect & Javascript Software Enginner. Sports and new technology enthusiast" />
           <meta property="og:title" content="Adrián García Diéguez"/>
-          <meta property="og:description" content="Frontend architect %26 Javascript Software Enginner. Sports and new technology enthusiast"/>
+          <meta property="og:description" content="Frontend architect & Javascript Software Enginner. Sports and new technology enthusiast"/>
           <meta property="og:image" content={require('./../styles/assets/profile.png')}/>
         </Helmet>
         <Header

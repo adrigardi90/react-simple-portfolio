@@ -4,6 +4,7 @@ import { Pages } from "../routes/routes.interface"
 const client = sanityClient({
     projectId: `${process.env.REACT_APP_PROJECT_ID}`,
     dataset: 'production',
+    useCdn: false 
 })
 
 export const DataSource = (() => {

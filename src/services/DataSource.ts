@@ -15,7 +15,7 @@ export const DataSource = (() => {
         let query
 
         if (Pages.Home === page) {
-            query = `${getCommonQuery(page)}{title, subtitle, team_title, team_subtitle}`
+            query = `${getCommonQuery(page)}{title, subtitle, team_title, team_subtitle, bottom__title, bottom__subtitle}`
         }
 
         if (Pages.Projects === page) {

@@ -2,8 +2,9 @@ const sanityClient = require('@sanity/client')
 import { Pages } from "../routes/routes.interface"
 
 const client = sanityClient({
-    projectId: `${process.env.PROJECT_ID}`,
+    projectId: `${process.env.REACT_APP_PROJECT_ID}`,
     dataset: 'production',
+    useCdn: false 
 })
 
 export const DataSource = (() => {
@@ -14,7 +15,7 @@ export const DataSource = (() => {
         let query
 
         if (Pages.Home === page) {
-            query = `${getCommonQuery(page)}{title, subtitle, team_title, team_subtitle}`
+            query = `${getCommonQuery(page)}{title, subtitle, team_title, team_subtitle, bottom__title, bottom__subtitle}`
         }
 
         if (Pages.Projects === page) {

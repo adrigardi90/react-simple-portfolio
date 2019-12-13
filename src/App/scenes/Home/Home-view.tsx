@@ -16,13 +16,15 @@ export const HomeView = (props: any) => {
 
             <div className="home__team">
                 <div className="main-container">
-                    <h2>{props.data.team_title}</h2>
                     <h3>{props.data.team_subtitle}</h3>
                 </div>
             </div>
 
-            <div style={{height: '400px', background: '#ffd300'}}>
-
+            <div className="home__bottom">
+                <div className="main-container">
+                    <h1>{props.data.bottom__title}</h1>
+                    <p>{props.data.bottom__subtitle}</p>
+                </div>
             </div>
         </div>
     )

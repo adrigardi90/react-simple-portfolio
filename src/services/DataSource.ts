@@ -4,7 +4,7 @@ import { Pages } from "../routes/routes.interface"
 const client = sanityClient({
     projectId: `${process.env.REACT_APP_PROJECT_ID}`,
     dataset: 'production',
-    useCdn: false 
+    useCdn: true 
 })
 
 export const DataSource = (() => {
@@ -22,7 +22,8 @@ export const DataSource = (() => {
             query = `${getCommonQuery(page)}{
                 title, 
                 subtitle, 
-                "projects": *[_type == "card"]{
+                "projects": *[_type == "card"] | order(id){
+                    id,
                     title, 
                     subtitle, 
                     description, 

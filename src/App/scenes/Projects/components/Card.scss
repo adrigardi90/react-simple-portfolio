@@ -58,8 +58,9 @@
       position: relative;
       margin-right: 10px;
       width: 34px;
-      &:hover{
-          cursor: pointer;
+
+      &:hover {
+        cursor: pointer;
       }
     }
   }
@@ -80,9 +81,13 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: 15px;
       line-height: 1.5em;
       margin: 6px 0 0 0;
+
+      @media screen and (min-width: $md) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -90,6 +95,7 @@
     display: flex;
     margin-top: 2rem;
     flex-wrap: wrap;
+
     .tech {
       display: flex;
       align-items: center;
@@ -105,8 +111,12 @@
       }
 
       span {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 400;
+
+        @media screen and (min-width: $md) {
+          font-size: 16px;
+        }
       }
     }
   }

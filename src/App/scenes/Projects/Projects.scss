@@ -52,6 +52,33 @@
                 font-size: 9.2rem;
                 line-height: 9.5rem;
             }
+
+            &:empty{
+                width: 70%;
+                height: 100px;
+                position: relative;
+                display: block;
+                background-image:
+                    linear-gradient(90deg,
+                    rgba(lightgrey, 0) 0,
+                    rgba(lightgrey, .8) 50%,
+                    rgba(lightgrey, 0) 100%
+                    );
+                    background-position: -200% 0;
+                animation: loading 1.5s linear infinite; 
+                background-size: 100% 100px;
+            }
+
+            @keyframes loading {
+                // from {
+                //     background-position: -100px 0;
+                // }
+                to {
+                  background-position:
+                    200% 0, 
+                  ;
+                }
+              }
         }
     }
 
@@ -75,6 +102,13 @@
                 max-width: 50%;
                 width: 50%;
             }
+
+
+            &:empty{
+                width: 40%;
+                height: 70px;
+                background:grey;
+            }
         }
     }
 
@@ -87,3 +121,4 @@
         }
     }
 }
+

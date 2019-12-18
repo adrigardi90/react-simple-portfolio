@@ -5,18 +5,19 @@ import './Projects.scss'
 import { Card } from './components/Card';
 
 export const ProjectsView = (props: any) => {
+    props = {}
     return (
-        props.data &&
+        // props.data &&
             (<div className="projects">
                 <div className="background">
                     <div className="projects__title">
                         <div className="main-container">
-                            <p>{props.data.title}</p>
+                            <p>{(props.data && props.data.title)}</p>
                         </div>
                     </div>
                     <div className="projects__subtitle">
                         <div className="main-container">
-                            <p>{props.data.subtitle}</p>
+                            <p>{(props.data && props.data.subtitle)}</p>
                         </div>
                     </div>
                 </div>
@@ -24,7 +25,7 @@ export const ProjectsView = (props: any) => {
                     <div className="main-container">
                         <Grid container spacing={5}>
                             {
-                                props.data.projects.map((project: any, index: number) => (
+                                props.data && props.data.projects.map((project: any, index: number) => (
                                     <Grid item xs={12} sm={6} md={4} className="container" key={index}>
                                         <Card {...project} />
                                     </Grid>

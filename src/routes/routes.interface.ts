@@ -7,5 +7,6 @@ export interface AppRoute {
 export enum Pages {
     Home = 'Home',
     Projects = 'Projects',
-    Contact = 'Contact'
+    Contact = 'Contact',
+    Posts = 'Posts'
 }

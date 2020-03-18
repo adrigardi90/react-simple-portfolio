@@ -18,11 +18,11 @@ export const DataSource = (() => {
             query = `${getCommonQuery(page)}{title, subtitle, team_title, team_subtitle, bottom__title, bottom__subtitle}`
         }
 
-        if (Pages.Projects === page) {
+        if (Pages.Projects === page || Pages.Posts === page) {
             query = `${getCommonQuery(page)}{
                 title, 
                 subtitle, 
-                "projects": *[_type == "card"] | order(id){
+                "${page.toLowerCase()}": ${page.toLowerCase()}[]-> {
                     id,
                     title, 
                     subtitle, 

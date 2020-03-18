@@ -1,9 +1,9 @@
-@import "./../../../styles/_variables";
+@import "./../../styles/_variables";
 
 .projects {
   margin-bottom: 6rem;
   .background {
-    background-image: url("./../../../styles/assets/projects_bck.webp");
+    // background-image: url("./../../styles/assets/projects_bck.webp");
     background-position: top center;
     background-attachment: scroll;
     background-repeat: no-repeat;

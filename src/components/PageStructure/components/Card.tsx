@@ -3,7 +3,7 @@ import Icon from '@material-ui/core/Icon'
 import GitHubIcon from '@material-ui/icons/GitHub'
 
 import './Card.scss'
-import { openNewTab } from '../../../../utils/utils'
+import { openNewTab } from '../../../utils/utils'
 
 interface Props {
     image?: any
@@ -47,7 +47,7 @@ export const Card = (props: Props) => {
                         && 
                             <img 
                                 className="publication" 
-                                src={require("./../../../../styles/assets/medium.png")} 
+                                src={require("./../../../styles/assets/medium.png")} 
                                 onClick={openNewTab(props.publication)}/> 
                             
                     }

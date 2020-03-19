@@ -4,13 +4,18 @@ import Grid from "@material-ui/core/Grid";
 import "./PageStructure.scss";
 import { Card } from "./components/Card";
 import { Pages } from "./../../routes/routes.interface";
+import { isSafari } from '../../utils/utils'
 import projectBkg from "./../../styles/assets/projects_bck.webp"
 import postBkg from "./../../styles/assets/post_bck.webp"
+import projectBkgPng from "./../../styles/assets/projects_bck.png"
+import postBkgPng from "./../../styles/assets/post_bck.png"
 
 export const PageStructure = (page: Pages) => (props: any) => {
 
   const backgroundStyle = {
-    backgroundImage:`url(${page === Pages.Projects ? projectBkg : postBkg})` 
+    backgroundImage: !isSafari() ?
+      `url(${page === Pages.Projects ? projectBkg : postBkg})` :
+      `url(${page === Pages.Projects ? projectBkgPng : postBkgPng})` 
   };
 
   return (

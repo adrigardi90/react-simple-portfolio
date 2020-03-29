@@ -22,9 +22,9 @@ export const HomeView = (props: any) => {
       <div className="home__bottom">
         <div className="main-container">
           <h1 className="skeleton">{props.data && props.data.bottom__title}</h1>
-          <p className="skeleton">
+          {/* <p className="skeleton">
             {props.data && props.data.bottom__subtitle}
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

@@ -8,6 +8,6 @@ export { Projects as ProjectsRoute} from './Projects'
 
 export const routes = [
     Home,
-    Projects, 
-    Posts
+    Posts,
+    Projects 
 ]

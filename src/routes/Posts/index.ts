@@ -1,7 +1,7 @@
-import { AppRoute, Pages } from "../routes.interface"
+import { AppRoute, Pages } from "../routes.interface";
 
 export const Posts: AppRoute = {
-    path: '/posts',
-    name: Pages.Posts,
-    component: Pages.Posts
-}
+  path: "/articles",
+  name: "Articles",
+  component: Pages.Posts,
+};
